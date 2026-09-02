@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zarou'Studios Art">
+  <title>Zarou'Studios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#top" class="logo">Zarou'Studios</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-label">Visual Artist</p>
+        <h1>From The<br>Sketchbook.</h1>
+        <p class="hero-intro">
+          Pencil and markers on paper — where the act of drawing itself becomes a journey.
+        </p>
+        <a href="#work" class="btn">View selected works</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-frame">
+          <img src="art/JPG/flowers.jpg"></img>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <div>
+          <h2>Our Work</h2>
+          <p>A curated collection of sketches</p>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <article class="gallery-item">
+          <div class="gallery-image" style="--hue: 28; --sat: 45%; --light: 72%;">
+            <img src="art/JPG/flower_10.jpeg"></img>
+          </div>
+          <div class="gallery-caption">
+            <h3>Soft Bloom</h3>
+            <p>Zara Saleh</p>
+          </div>
+        </article>
+        <article class="gallery-item">
+          <div class="gallery-image" style="--hue: 210; --sat: 25%; --light: 65%;">
+            <img src="art/JPG/flower_2.jpg"></img>
+          </div>
+          <div class="gallery-caption">
+            <h3>Side by Side</h3>
+            <p>Zara Saleh</p>
+          </div>
+        </article>
+        <article class="gallery-item">
+          <div class="gallery-image" style="--hue: 145; --sat: 30%; --light: 58%;">
+            <img src="art/JPG/flower_12.jpg"></img>
+          </div>
+          <div class="gallery-caption">
+            <h3>A Sunny Sketch</h3>
+            <p>Zara Saleh</p>
+          </div>
+        </article>
+        <article class="gallery-item gallery-item--wide">
+          <div class="gallery-image" style="--hue: 35; --sat: 55%; --light: 78%;">
+            <img src="art/JPG/flower_9.jpg"></img>
+          </div>
+          <div class="gallery-caption">
+            <h3>Crimson Petals</h3>
+            <p>Zara Saleh</p>
+          </div>
+        </article>
+        <article class="gallery-item">
+          <div class="gallery-image" style="--hue: 18; --sat: 50%; --light: 62%;">
+            <img src="art/JPG/painting.jpg"></img>
+          </div>
+          <div class="gallery-caption">
+            <h3>Abstract Liquid Letters</h3>
+            <p>Zara Saleh</p>
+          </div>
+        </article>
+        <article class="gallery-item">
+          <div class="gallery-image" style="--hue: 220; --sat: 35%; --light: 48%;">
+            <img src="art/JPG/person.jpg"></img>
+          </div>
+          <div class="gallery-caption">
+            <h3>Pink Vision</h3>
+            <p>Zara Saleh</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <div>
+          <h2>About Zarou'Studios</h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-portrait" aria-hidden="true">
+          <img src="art/JPG/laptop.jpg"></img>
+        </div>
+        <div class="about-text">
+          <p class="about-lead">
+            Zarou'Studios is based in Ontario, Canada. Our work brings together sketches of flowers, plants, figures, and everyday objects — quiet studies that explore the space between observation, memory, and imagination.
+          </p>
+          <p>
+            The owner and founder of Zarou'Studios, Zara Saleh, is currently a high school student. Her recent work includes sketchbook drawings of flowers, plants, figures, and everyday objects, exploring her broad imagination.
+          <ul class="about-details">
+            <li><span>Medium</span>Pencil, Marker, Colored Pencil, Paper</li>
+            <li><span>From</span> Ontario, Canada</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <div>
+          <h2>Contact</h2>
+          <p>For commissions, inquiries, or just to reach out!</p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:hello@zaroustudios.art" class="contact-link">hello@zaroustudios.art</a>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co/hello@zaroustudios.art" method="post">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" hidden aria-hidden="true" role="dialog" aria-label="Artwork preview">
+    <button class="lightbox-close" aria-label="Close preview">&times;</button>
+    <div class="lightbox-content">
+      <div class="lightbox-image"></div>
+      <div class="lightbox-meta">
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-medium"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
